@@ -35,6 +35,7 @@ All rights reserved.
   .page404{
     background: url(<?php $this->options->themeUrl('imgs/404.jpg'); ?>) center -20px repeat-x;
     background-size: cover;
+    margin-top:20px;
     padding: 120px 0px 400px 0px;
     color: #FFF;
   }
