@@ -1,0 +1,145 @@
+/*inmeng theme main css
+style.css
+theme by inmeng(http://inmeng.xyz)
+All rights reserved
+*/
+  .navbar-fixed-top {
+  top: 0;
+  border-width: 0 0 1px;
+}
+ .navbar-fixed-top .navbar-collapse,
+  .navbar-static-top .navbar-collapse,
+  .navbar-fixed-bottom .navbar-collapse {
+    padding-right: 0;
+    padding-left: 0;
+  }
+body{
+   font-family:Microsoft Yahei;
+   font-size:14px;
+   padding-top:30px;
+   background-color:grey;
+}
+.inavibar{
+   background-color:#fff;
+   border-color: #080808;
+   
+}
+h3{
+   color:#9B60F4;
+}
+.blankarea{
+	padding: 10px 0;
+	padding-left:10px;
+	padding-right:10px;
+	background-color: #f5f5f5;
+	border-top: 1px solid #fff;
+	border-bottom: 1px solid #ddd
+}
+
+.panel {
+border-radius: 2px;
+border: 0;
+box-shadow: 0 1px 6px rgba(0,0,0,.12),0 1px 6px rgba(0,0,0,.12);
+}
+
+.welcome a  .active{
+}
+
+.isidebar h3{
+font-size:16px;
+font-family:Microsoft Yahei;
+color:white;
+display:block;
+background-color:#31DF54;
+padding:10px 10px;
+position:relative;
+margin-bottom:-1px;
+}
+
+.isidebar  a{
+position:relative;
+display:block;
+padding:10px 10px;
+padding-left:8px;
+font-family:Microsoft Yahei;
+color:black;
+border:1px solid silver;
+background-color:#fff;
+text-decoration:none;
+}
+.isidebar a.active{
+text-decoration:none;
+color:black;
+display:block;
+}
+
+.navbar-inverse {
+  background-color: #fff;
+  border-color: silver;
+}
+.navbar-inverse .navbar-brand {
+  color: #9d9d9d;
+}
+.navbar-inverse .navbar-brand:hover,
+.navbar-inverse .navbar-brand:focus {
+  color: #0997F7;
+  background-color: transparent;
+}
+.navbar-inverse .navbar-text {
+  color: #021E31;
+}
+.navbar-inverse .navbar-nav > li > a {
+  color: #021E31;
+}
+.navbar-inverse .navbar-nav > li > a:hover,
+.navbar-inverse .navbar-nav > li > a:focus {
+  color: #0997F7;
+  background-color: transparent;
+}
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .active > a:hover,
+.navbar-inverse .navbar-nav > .active > a:focus {
+  color: #fff;
+  background-color: silver;
+}
+.navbar-inverse .navbar-nav > .disabled > a,
+.navbar-inverse .navbar-nav > .disabled > a:hover,
+.navbar-inverse .navbar-nav > .disabled > a:focus {
+  color: #444;
+  background-color: transparent;
+}
+.navbar-inverse .navbar-toggle {
+  border-color: #333;
+}
+.navbar-inverse .navbar-toggle:hover,
+.navbar-inverse .navbar-toggle:focus {
+  background-color: #333;
+}
+.navbar-inverse .navbar-toggle .icon-bar {
+  background-color: #fff;
+}
+.navbar-inverse .navbar-collapse,
+.navbar-inverse .navbar-form {
+  border-color: #101010;
+}
+.navbar-inverse .navbar-nav > .open > a,
+.navbar-inverse .navbar-nav > .open > a:hover,
+.navbar-inverse .navbar-nav > .open > a:focus {
+  color: #fff;
+  background-color: #080808;
+}
+footer {
+margin: 0;
+position: fixed;
+bottom: 0;
+left: 0;
+right: 0;
+z-index: 5;
+
+box-shadow: 0 0 10px #202020;
+}
+footer .ifooter {
+	background: #1B2122;
+	color: #aaa;
+	padding: 10px 0 3px 0;
+}
