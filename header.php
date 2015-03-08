@@ -27,6 +27,63 @@ All rights reserved.
   <?php if (!empty($this->options->isIndent) && 'IsIndentTrue' == $this->options->isIndent): ?>
   .post-content p{text-indent: 2em;}
   <?php endif; ?>
+.list-group{
+
+width:40%
+float:left;
+}
+
+.panel {
+margin-left:0px;
+background-color:white;
+padding-top:10px;
+padding-bottom:10px;
+padding-left:20px;
+padding-right:20px;
+margin:10px 10px;
+border-radius: 2px;
+border: 0;
+box-shadow: 0 1px 6px rgba(0,0,0,.12),0 1px 6px rgba(0,0,0,.12);
+}
+
+.panel span{
+font-family:microsoft yahei;
+}
+
+.panel span > a{
+text-decoration:none;
+}
+.list-group a{
+background-color:#fff;
+margin-top:-1px;
+margin-bottom:0;
+padding-top:10px;
+padding-bottom:10px;
+padding-left:10px;
+padding-right:10px;
+border:1px solid silver;
+display:block;
+text-decoration:none;
+font-family:Microsoft Yahei;
+border: 0;
+box-shadow: 0 1px 6px rgba(0,0,0,.12),0 1px 6px rgba(0,0,0,.12);
+}
+
+.list-group span{
+display:block;
+background-color:#7CE1FB;
+padding-top:8px;
+padding-bottom:8px;
+padding-left:10px;
+font-family:comic sans ms;
+color:white;
+margin-bottom:0;
+margin-top:20px;
+font-size:16px;
+border-radius: 6px;
+border: 0;
+box-shadow: 0 1px 6px rgba(0,0,0,.12),0 1px 6px rgba(0,0,0,.12);
+}
   .billboard {
     background: url(<?php $this->options->themeUrl('imgs/billboard.jpg'); ?>) center -20px repeat-x;
     background-size: cover;
