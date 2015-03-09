@@ -7,8 +7,10 @@ all rights reserved
 ?>
 <br/>
 <script>hitokoto()</script>
+<!--不需要一言的话注释掉上面一行-->
 <div class="isidebar">
-<h3>欢迎</h3>
+<div class="list-group">
+<span>Welcome</span>
 <a class="active">
 <?php
 $whattime=date('G');
@@ -22,22 +24,21 @@ echo "晚上好，欢迎来到".$this->options->title."！";
 } else{
 echo"夜深了哦，请您赶快休息哦，不要把身体累坏呢^_^ ";
 }
-//如果时间和问候语不服，你可以将上文 $whattime+=8; 注释掉
 ?>
 </a>
 
-<h3>po主最近写的文章</h3>
+<span>Recently</span>
 <?php $this->widget('Widget_Contents_Post_Recent')->parse('<a class="list-group-item" href="{permalink}">{title}</a>'); ?>
-
-<h3>看看这些最新评论</h3>
- 
+<span>Friends</span>
+<span>Comments</span>
+ <!--如果使用多说/畅言之类的插件，可以把下面的代码替换掉-->
 		<?php $this->widget('Widget_Comments_Recent')->to($comments); ?>
         <?php while($comments->next()): ?>
             <a class="list-group-item" href="<?php $comments->permalink(); ?>"><?php $comments->author(false); ?>:<?php $comments->excerpt(20, '...'); ?></a>
         <?php endwhile; ?>
-<h3>文章归档</h3>
+<span>Article</span>
         <?php $this->widget('Widget_Contents_Post_Date', 'type=month&format=Y年m月')->parse('<a class="list-group-item" href="{permalink}">{date}</a>'); ?>
-<h3>你还想干什么=A=</h3>
+<span>Other</span>
  <?php if($this->user->hasLogin()): ?>
 			<a class="list-group-item" href="<?php $this->options->adminUrl(); ?>"><?php _e('进入后台'); ?> (<?php $this->user->screenName(); ?>)</a>
             <a class="list-group-item" href="<?php $this->options->logoutUrl(); ?>"><?php _e('退出'); ?></a>
@@ -46,4 +47,5 @@ echo"夜深了哦，请您赶快休息哦，不要把身体累坏呢^_^ ";
         <?php endif; ?>
         <a class="list-group-item" href="<?php $this->options->feedUrl(); ?>"><?php _e('文章 RSS'); ?></a>
         <a class="list-group-item" href="<?php $this->options->commentsFeedUrl(); ?>"><?php _e('评论 RSS'); ?></a>
+</div>
 </div>
